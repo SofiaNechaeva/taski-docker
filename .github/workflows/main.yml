@@ -72,7 +72,7 @@ jobs:
             password: ${{ secrets.DOCKER_PASSWORD }}
             # Хорошо ли держать логин и пароль прямо в коде workflow?
             # Нет, это нехорошо
-        - name: Push to DockerHub
+        - name: Push it to DockerHub
           # Одновременный билд и пуш образа в Docker
           uses: docker/build-push-action@v5
           with:
